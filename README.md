@@ -36,6 +36,7 @@ Every link below was checked to resolve (HTTP 200/301) at the time of writing. E
 
 ## Tools — inspect & measure
 
+- [fpkit](https://github.com/North-web-dev/fpkit) — a single Go binary (`fp`) covering both sides of the wire: `fp get` fetches as a byte-exact browser, `fp inspect` reflects a caller's JA3/JA4/JA4H/Akamai-h2 with a plain-English verdict, `fp check` is a CI drift guard, `fp guard` flags non-browser inbound traffic, `fp hook` is a webhook inspector that shows the caller's fingerprint, and `fp db ja4 <value>` reverse-looks-up a JA4 against bundled browser + known-client fingerprints.
 - [fpcheck](https://github.com/North-web-dev/fpcheck) — a self-hostable TLS/HTTP2 fingerprint tester and differ: it reports your JA3/JA4/JA4H and Akamai HTTP/2 fingerprint and diffs them against real browser profiles so you can see exactly where an impersonation attempt leaks.
 - [tls.peet.ws](https://tls.peet.ws/) — a hosted reflector that shows your JA3, JA4, peetprint, Akamai HTTP/2 fingerprint and raw ClientHello in the browser. The quickest way to see what a given client actually sends.
 - [BrowserLeaks — TLS](https://browserleaks.com/tls) — a well-known browser-privacy test page that reports your TLS fingerprint (JA3/JA4), cipher suites, and extensions.
