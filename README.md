@@ -45,6 +45,7 @@ Every link below was checked to resolve (HTTP 200/301) at the time of writing. E
 ## Datasets
 
 - [fingerprint-db](https://github.com/North-web-dev/fingerprint-db) — measured browser TLS (JA3/JA4) and HTTP/2 (Akamai) fingerprints as JSON, with Go and Python loaders. Intended as a reference corpus for building and validating impersonation tooling.
+- [cdn-ja4-policy-db](https://github.com/North-web-dev/cdn-ja4-policy-db) — open, sourced dataset of how CDN/WAF/anti-bot vendors (Cloudflare, Akamai, DataDome, …) treat TLS/JA4 client fingerprints; every entry carries provenance and a `basis` (capability vs observed).
 - [JA4DB](https://ja4db.com/) — FoxIO's community database mapping JA4+ fingerprints to the applications and malware that produce them.
 - [SSLBL JA3 fingerprints (abuse.ch)](https://sslbl.abuse.ch/ja3-fingerprints/) — abuse.ch's curated list of JA3 fingerprints associated with malware and botnet C2 traffic.
 - [salesforce/ja3 — lists](https://github.com/salesforce/ja3/tree/master/lists) — reference JA3 fingerprint lists shipped alongside the original spec.
