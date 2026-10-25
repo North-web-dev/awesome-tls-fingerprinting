@@ -42,6 +42,8 @@ Every link below was checked to resolve (HTTP 200/301) at the time of writing. E
 - [Scrapfly — JA3 fingerprint tool](https://scrapfly.io/web-scraping-tools/ja3-fingerprint) — a free hosted tool that computes and explains your JA3 fingerprint.
 - [Scrapfly — HTTP/2 fingerprint tool](https://scrapfly.io/web-scraping-tools/http2-fingerprint) — companion tool that reports your Akamai-style HTTP/2 fingerprint.
 
+- [fingerprint-check-action](https://github.com/North-web-dev/fingerprint-check-action) — a GitHub Action that runs your HTTP client against a reflector in CI and fails the build if its JA4/JA3/Akamai fingerprint drifts from the expected browser profile — a regression guard for impersonation setups.
+
 ## Datasets
 
 - [fingerprint-db](https://github.com/North-web-dev/fingerprint-db) — measured browser TLS (JA3/JA4) and HTTP/2 (Akamai) fingerprints as JSON, with Go and Python loaders. Intended as a reference corpus for building and validating impersonation tooling.
