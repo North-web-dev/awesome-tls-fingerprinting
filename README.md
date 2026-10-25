@@ -32,6 +32,7 @@ Every link below was checked to resolve (HTTP 200/301) at the time of writing. E
 - [curl-impersonate](https://github.com/lexiforest/curl-impersonate) — **C / curl**. A patched build of curl linked against browser TLS libraries (BoringSSL/NSS) with matching cipher, extension, and HTTP/2 settings, so the command-line `curl` impersonates Chrome/Firefox/Edge/Safari. Also see the original [lwthiker/curl-impersonate](https://github.com/lwthiker/curl-impersonate).
 - [tls-client](https://github.com/bogdanfinn/tls-client) — **Go**. A higher-level HTTP client built on utls with a large catalogue of pre-built browser profiles and a simple request API; also shipped as shared libraries for use from other languages.
 - [impersonate-http](https://github.com/North-web-dev/impersonate-http) — **Go**. An `http.Client` with a byte-exact browser TLS fingerprint (via uTLS), aimed at surviving JA3/JA4 blocking without spinning up a headless browser.
+- [impersonate-rs](https://github.com/North-web-dev/impersonate-rs) — **Rust**. Byte-exact browser TLS (JA4) via BoringSSL — the Rust counterpart to impersonate-http. Chrome profile verified against tls.peet.ws.
 
 ## Tools — inspect & measure
 
