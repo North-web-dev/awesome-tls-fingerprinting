@@ -50,6 +50,7 @@ Every link below was checked to resolve (HTTP 200/301) at the time of writing. E
 
 ## Defensive & detection
 
+- [ja4-guard](https://github.com/North-web-dev/ja4-guard) — **Go**. Zero-dependency library + reverse proxy that captures the raw inbound ClientHello, computes JA4/JA4H, and enforces allow/deny/known-browser policy at the edge — the defensive counterpart to client impersonation.
 - [fingerproxy](https://github.com/0x4D31/fingerproxy) — **Go**. A reverse proxy that computes JA3/JA4 and Akamai HTTP/2 fingerprints for each incoming connection and forwards them as headers to your backend — a practical way to fingerprint clients at the edge.
 - [FoxIO-LLC/ja4 — detector plugins](https://github.com/FoxIO-LLC/ja4/tree/main/rust) — the JA4+ repo ships generators/analyzers for Zeek, Wireshark, Suricata, and more, usable for passive detection of forged fingerprints.
 - [dreadl0ck/ja3](https://github.com/dreadl0ck/ja3) — **Go**. A gopacket-based library and CLI for extracting JA3/JA3S fingerprints from live traffic or PCAPs — useful on the detection side.
